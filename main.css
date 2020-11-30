@@ -1,0 +1,227 @@
+*{box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+.container{
+    width: 425px;
+    box-shadow: 0 0 1em black;
+    margin: 20px 0 20px 0;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 425px;
+    padding: 25px 20px 10px 20px;
+}
+.container-tasks {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+.head__title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 36px;
+    color: #ECE9E6;  
+}
+.head__button  {
+    border: none; 
+    color: #ECE9E6;  
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    content: "\f040";
+    font-family: 'FontAwesome';  
+}
+.head__button:hover {
+    color: #5484dd; 
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.add_task {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+.add_task-input {
+    width: 85%;   
+    font-family: 'Indie Flower', cursive;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+    color: white;
+    border: none;
+}
+.tasks_list-input {
+    background-color: transparent;
+    width: 85%;   
+    font-family: 'Indie Flower', cursive;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+    color: white;
+    border: none;
+}
+.tasks_list-input:focus{
+    border: 2px solid #86a8e7;
+    border-radius: 20px;
+}
+.tasks_list-input:checked {
+    background-color: red;
+}
+.add_task-input::-webkit-input-placeholder { 
+    color: white; 
+}
+.add_task-input::-moz-placeholder { 
+    color: white; 
+}
+.add_task-btn {
+    width: 15%;
+    outline: none;
+    content: "\f055"; 
+    font-family: 'FontAwesome'; 
+    cursor: pointer;
+    background: transparent;
+    outline: none; 
+    border: none;
+    color: #ECE9E6;  
+    padding-left: 20px;
+}
+.add_task-btn:hover{
+    color: #5484dd; 
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.add_task-delete {
+    font-family: 'FontAwesome'; 
+    content: "\f057";
+    cursor: pointer;
+    background: transparent;
+    outline: none; 
+    border: none;
+    color: #ECE9E6; 
+    position: absolute;
+    margin-left: 325px;
+    /* opacity: 0; */
+}
+.add_task-delete:hover{
+    color: #5484dd; 
+    background: transparent;
+    outline: none;
+    border: none;
+    /* opacity: 1; */
+} 
+.add_task-edit {
+    font-family: 'FontAwesome'; 
+    content: "\f14b";
+    cursor: pointer;
+    background: transparent;
+    outline: none; 
+    border: none;
+    color: #ECE9E6;  
+    position: absolute;
+    margin-left: 280px;
+    /* opacity: 0; */
+
+}
+.add_task-edit:hover{
+    color: #5484dd; 
+    background: transparent;
+    outline: none;
+    border: none;
+    /* opacity: 1; */
+} 
+
+.todos {
+    height: 50%;
+}
+.container-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 425px;
+}
+.button {
+    outline-style: none;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-variant: small-caps;
+    border-radius: 20px;
+    font-family: 'Indie Flower', cursive;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button:hover {
+    background-color: #5484dd;
+}
+.todo-text {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: white;
+    border: 10px olive;   
+}
+li {
+    color: white;
+    list-style: none;
+    line-height: 10px;
+    height: 30px;
+    width: 70%;
+    outline: 1em black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+li:hover >.add_task-delete {
+    opacity: 1;
+}
+li:hover >.add_task-edit {
+    opacity: 1;
+}
+li:hover >.add_task-save {
+    opacity: 1;
+}
+.tasks_list{
+    background-color: transparent;
+    width: 85%;   
+    font-family: 'Indie Flower', cursive;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+    color: white;
+    border: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 100%;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+ul {
+    padding-left: 20px;
+}
+.show {
+    display: none;
+}
