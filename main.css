@@ -250,4 +250,7 @@ ul {
     .container {
         width: 400px;
     }
+    .add_task-delete { 
+        padding-right: 20px;
+    }
 }
