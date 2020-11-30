@@ -38,7 +38,7 @@ const createTodo = () => {
   const deleteElem = document.createElement("button");
   deleteElem.className = "add_task-delete fa-times-circle fa-2x";
   li.append(deleteElem);
-
+  deleteLi(deleteElem);
 }
 
 // save localeStorage
