@@ -3,8 +3,11 @@ body {
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@font-face {
+    font-family: Indie Flower;
+    src: url(/IndieFlower.ttf);
+    }
 .container{
     width: 425px;
     box-shadow: 0 0 1em black;
