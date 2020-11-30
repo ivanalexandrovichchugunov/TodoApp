@@ -90,6 +90,7 @@ body {
         color: white;
         border: none;
         font-family: 'Roboto';
+        width: 280px;
     }
     .tasks_list-input:focus{
         border: 2px solid #86a8e7;
