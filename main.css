@@ -50,11 +50,11 @@ body {
 .add_task {
     display: flex;
     align-items: center;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
     font-family: 'Roboto';
 }
 .add_task-input {
-    width: 85%;   
+    width: 90%;   
     height: 40px;
     font-size: 16px;
     background: transparent;
@@ -91,7 +91,6 @@ body {
     color: white; 
 }
 .add_task-btn {
-    width: 15%;
     outline: none;
     content: "\f055"; 
     font-family: 'FontAwesome'; 
@@ -100,7 +99,6 @@ body {
     outline: none; 
     border: none;
     color: #ECE9E6;  
-    padding-left: 25px;
 }
 .add_task-btn:hover{
     color: #5484dd; 
@@ -225,15 +223,17 @@ body {
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 ul {
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .show {
     display: none;
 }
+.tasks {
+    padding: 10px 10px 10px 10px;
+}
 @media (max-width: 350px) { 
     .container {
         width: 90%;
-        /* margin: 0 auto; */
     }
 }
 @media (max-width: 450px) { 
@@ -241,16 +241,8 @@ ul {
         width: 90%;
     }
 }
-/* @media (max-width: 768px) { 
-    .container {
-        width: 50%;
-    }
-} */
 @media (min-width: 1024px) { 
     .container {
         width: 400px;
-    }
-    .add_task-delete { 
-        padding-right: 20px;
     }
 }
