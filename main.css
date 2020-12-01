@@ -81,7 +81,7 @@ body {
     }
     .tasks_list-input {
         background-color: transparent;
-        width: 85%;   
+        width: 70%; 
         height: 40px;
         font-size: 16px;
         background: transparent;
@@ -90,7 +90,6 @@ body {
         color: white;
         border: none;
         font-family: 'Roboto';
-        width: 280px;
     }
     .tasks_list-input:focus{
         border: 2px solid #86a8e7;
@@ -129,6 +128,7 @@ body {
         outline: none; 
         border: none;
         color: #ECE9E6; 
+        width: 15%;
     }
     .add_task-delete:hover{
         color: #5484dd; 
@@ -144,6 +144,7 @@ body {
         outline: none; 
         border: none;
         color: #ECE9E6;  
+        width: 15%;
     }
     .add_task-edit:hover{
         color: #5484dd; 
