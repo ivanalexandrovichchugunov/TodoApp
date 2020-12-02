@@ -46,7 +46,7 @@ const saveTodoList = document.querySelector("button.save");
 
 saveTodoList.addEventListener('click', () => {
     localStorage.setItem('todos', ul.innerHTML)
-
+    alert("Список сохранен")
     });
 
 // delete TodoList localeStorage
@@ -54,6 +54,7 @@ const deleteTodoList = document.querySelector("button.clear");
 deleteTodoList.addEventListener('click', function(){
     ul.innerHTML= "";
     localStorage.removeItem('todos',ul.innerHTML );
+	alert("Список удален")
     });
 // load localeStorage
 
